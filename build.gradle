@@ -32,15 +32,28 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	// For generating value objects from annotations. See https://immutables.github.io
+	annotationProcessor 'org.immutables:value:2.8.3'
+
+	implementation 'org.immutables:value:2.8.3'
+	implementation 'org.immutables:builder:2.5.5'   // for annotations
+	implementation 'org.immutables:gson:2.5.5'      // for annotations
+
+	// mono support
+	implementation 'io.projectreactor:reactor-core:3.3.2.RELEASE'
 
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
+	// TODO: use spring boot starter for security ( https://spring.io/projects/spring-security )
+	// implementation 'org.springframework.boot:spring-boot-starter-security'
 
-	testImplementation "org.slf4j:slf4j-simple:1.7.26"
-	testImplementation "org.spockframework:spock-core:1.3-groovy-2.5"
-	testImplementation "org.testcontainers:testcontainers:1.12.5"
-	testImplementation "org.testcontainers:spock:1.12.5"
-	testImplementation "org.testcontainers:kafka:1.12.5"
+	testImplementation 'org.spockframework:spock-core:1.3-groovy-2.5'
+	testImplementation 'org.spockframework:spock-spring:1.3-groovy-2.5'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.2.4.RELEASE'
+	testImplementation 'org.springframework.boot:spring-boot-starter-webflux:2.2.4.RELEASE'
+
+	testImplementation 'org.testcontainers:testcontainers:1.12.5'
+	testImplementation 'org.testcontainers:spock:1.12.5'
 }
 
 asciidoctor {

@@ -11,9 +11,17 @@
 :groovy: https://groovy-lang.org/[Groovy]
 :springboot: https://spring.io/projects/spring-boot[Spring Boot]
 :springboot-initializr: https://start.spring.io/[Spring initializr]
+:immutables: https://immutables.github.io[Immutables]
+:pojo: https://en.wikipedia.org/wiki/Plain_old_Java_object[POJO]
 
 A {springboot} application for running REST microservices to provide access to human resources related swisscom
 resources. Setup with {springboot-initializr}.
+
+== Libraries
+
+=== Immutables
+
+Using {immutables} for generation of {pojo}s.
 
 == Build
 Run:
