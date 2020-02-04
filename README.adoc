@@ -1,0 +1,62 @@
+= Swisscom Human Resources
+:fonts: icon
+:version: 0.0.1-SNAPSHOT
+:artifact-group: com.swisscom
+:artifact-name: humanresources
+:dependency: {artifact-group}:{artifact-name}:{version}
+:jar-file: {artifact-name}-{version}.jar
+
+:gradle: https://gradle.org/[Gradle]
+:spock: http://spockframework.org/spock/docs/1.3/index.html[Spock Framework]
+:groovy: https://groovy-lang.org/[Groovy]
+:springboot: https://spring.io/projects/spring-boot[Spring Boot]
+:springboot-initializr: https://start.spring.io/[Spring initializr]
+
+A {springboot} application for running REST microservices to provide access to human resources related swisscom
+resources. Setup with {springboot-initializr}.
+
+== Build
+Run:
+[source,bash]
+----
+$ gradle build
+----
+
+The built jar file will be at `build/libs/{jar-file}`
+
+== Tests
+
+Uses {spock} & {groovy} for easy test writing.
+
+Run:
+[source,bash]
+----
+$ gradle check
+----
+
+== Documentation (Spring initializr)
+
+=== Reference Documentation
+For further reference, please consider the following sections:
+
+* https://docs.gradle.org[Official Gradle documentation]
+* https://docs.spring.io/spring-boot/docs/2.2.4.RELEASE/gradle-plugin/reference/html/[Spring Boot Gradle Plugin Reference Guide]
+* https://docs.spring.io/spring-boot/docs/2.2.4.RELEASE/reference/htmlsingle/#using-boot-devtools[Spring Boot DevTools]
+* https://docs.spring.io/spring-boot/docs/2.2.4.RELEASE/reference/htmlsingle/#configuration-metadata-annotation-processor[Spring Configuration Processor]
+* https://docs.spring.io/spring-boot/docs/2.2.4.RELEASE/reference/htmlsingle/#howto-use-exposing-spring-data-repositories-rest-endpoint[Rest Repositories]
+* https://docs.spring.io/spring-boot/docs/2.2.4.RELEASE/reference/htmlsingle/#boot-features-security[Spring Security]
+
+=== Guides
+The following guides illustrate how to use some features concretely:
+
+* https://spring.io/guides/gs/accessing-data-rest/[Accessing JPA Data with REST]
+* https://spring.io/guides/gs/accessing-neo4j-data-rest/[Accessing Neo4j Data with REST]
+* https://spring.io/guides/gs/accessing-mongodb-data-rest/[Accessing MongoDB Data with REST]
+* https://spring.io/guides/gs/securing-web/[Securing a Web Application]
+* https://spring.io/guides/tutorials/spring-boot-oauth2/[Spring Boot and OAuth2]
+* https://spring.io/guides/gs/authenticating-ldap/[Authenticating a User with LDAP]
+
+=== Additional Links
+These additional references should also help you:
+
+* https://scans.gradle.com#gradle[Gradle Build Scans – insights for your project's build]
